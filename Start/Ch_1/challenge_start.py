@@ -49,8 +49,8 @@ print(f"Most felt reports: {most_reports_place}, {most_reports}")
 
 data["features"].sort(key=get_sig, reverse=True)
 for i in range(0, 10):
-    place = data["features"][i]["properties"]["place"]
+    title = data["features"][i]["properties"]["title"]
     sig = data["features"][i]["properties"]["sig"]
 
-    print(f"Place: {place}, Sig: {sig}")
+    print(f"Event: {title}, Sig: {sig}")
 
